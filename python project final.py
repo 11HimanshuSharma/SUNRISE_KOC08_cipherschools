@@ -1,3 +1,5 @@
+# Creating Multiplication Table :-
+
 import math
 
 class computation():
@@ -7,6 +9,7 @@ class computation():
     
     for i in range(2, n +1):
       print("\n\nMULTIPLICATION TABLE OF {}: \n".format(i))
+      
       for j in range(1, 11):
         print(f"{i} x {j} = {i*j}")
         
