@@ -2,17 +2,19 @@
 
 import math
 
-class computation():
+class computation:
   
-  def Tablemult(self, integer):
-    self.integer = n
+  def __init__(self,n):
+    self.n = n
+  
+  def Tablemult(self):
     
-    for i in range(2, n +1):
+    for i in range(2, self.n+1):
       print("\n\nMULTIPLICATION TABLE OF {}: \n".format(i))
       
       for j in range(1, 11):
         print(f"{i} x {j} = {i*j}")
-        
-p = computation()
+
 n = int(input())
-p.Tablemult(n)
+p = computation(n)
+p.Tablemult()
